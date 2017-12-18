@@ -1,0 +1,10 @@
+image:
+    dockerfile: ./Dockerfile
+    build: .
+    container_name: comment-moderator
+    ports:
+      - "8087:81"
+      - "4567:4567"
+    volumes:
+      - ./app_data/:/var/www/app/comment-moderator-py-backend/
+    restart: on-failure

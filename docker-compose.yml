@@ -6,5 +6,5 @@ image:
       - "8087:81"
       - "4567:4567"
     volumes:
-      - ./app_data/:/var/www/app/comment-moderator-py-backend/
+      - ./app_data/:/var/www/app/comment-moderator-py-backend/app_data
     restart: on-failure

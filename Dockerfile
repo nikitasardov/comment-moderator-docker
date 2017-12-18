@@ -21,6 +21,6 @@ RUN git clone https://github.com/nikitasardov/comment-moderator-react-ui.git /va
 
 COPY config/front.conf /etc/nginx/conf.d
 
-WORKDIR /var/www/app/comment-moderator-py-backend
+WORKDIR /var/www/app/comment-moderator-py-backend/app_data
 
 CMD service nginx start && python3 /var/www/app/comment-moderator-py-backend/app.py
